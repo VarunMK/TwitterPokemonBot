@@ -39,5 +39,8 @@ def reply():
         elif('are you ready' in text and m.user.screen_name=='zotako01'):
             api.update_with_media(filename='aye.png',status='@'+m.user.screen_name+' o7',in_reply_to_status_id=m.id)
 while True:
-    reply()
+    try:
+        reply()
+    except Exception:
+        pass
     time.sleep(15)
