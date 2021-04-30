@@ -43,3 +43,4 @@ while True:
         reply()
     except tweepy.RateLimitError:
         time.sleep(15*60)
+    time.sleep(15)
