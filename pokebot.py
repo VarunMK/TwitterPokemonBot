@@ -42,5 +42,5 @@ while True:
     try:
         reply()
     except Exception:
-        time.sleep(15*60)
+        time.sleep(40*60)
     time.sleep(15)
